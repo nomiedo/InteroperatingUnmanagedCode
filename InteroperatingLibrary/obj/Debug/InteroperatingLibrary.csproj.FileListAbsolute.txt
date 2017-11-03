@@ -1,1 +1,5 @@
 D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\InteroperatingLibrary.exe.config
+d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\InteroperatingLibrary.exe
+d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\InteroperatingLibrary.pdb
+d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.exe
+d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.pdb
