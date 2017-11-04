@@ -3,3 +3,4 @@ d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\Interoper
 d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\InteroperatingLibrary.pdb
 d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.exe
 d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.pdb
+d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.csprojResolveAssemblyReference.cache

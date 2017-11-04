@@ -1,5 +1,8 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
+using System.Threading;
+using Microsoft.Win32.SafeHandles;
 
 namespace ConsoleApplication1
 {
@@ -38,16 +41,33 @@ namespace ConsoleApplication1
 
         struct SystemBatteryStateBuffer
         {
-            public bool AcOnLine;
-            public bool BatteryPresent;
-            public bool Charging;
-            public bool Discharging;
-            public string MaxCapacity;
-            public string RemainingCapacity;
-            public string Rate;
-            public string EstimatedTime;
-            public string DefaultAlert1;
-            public string DefaultAlert2;
+            public byte AcOnLine;
+
+            public byte BatteryPresent;
+
+            public byte Charging;
+
+            public byte Discharging;
+
+            public byte spare1;
+
+            public byte spare2;
+
+            public byte spare3;
+
+            public byte spare4;
+
+            public UInt32 MaxCapacity;
+
+            public UInt32 RemainingCapacity;
+
+            public Int32 Rate;
+
+            public UInt32 EstimatedTime;
+
+            public UInt32 DefaultAlert1;
+
+            public UInt32 DefaultAlert2;
         }
 
         struct Buffer
@@ -98,6 +118,16 @@ namespace ConsoleApplication1
         );
 
         #endregion
+
+        [DllImport("PowrProf.dll", CharSet = CharSet.Auto, ExactSpelling = true)]
+        public static extern bool SetSuspendState(bool hiberate, bool forceCritical, bool disableWakeEvent);
+
+        [DllImport("kernel32.dll")]
+        public static extern SafeWaitHandle CreateWaitableTimer(IntPtr lpTimerAttributes, bool bManualReset, string lpTimerName);
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        public static extern bool SetWaitableTimer(SafeWaitHandle hTimer, [In] ref long pDueTime, int lPeriod, IntPtr pfnCompletionRoutine, IntPtr lpArgToCompletionRoutine, bool fResume);
 
         static void Main(string[] args)
         {
@@ -160,6 +190,39 @@ namespace ConsoleApplication1
                 Console.WriteLine($"Battery : Discharging: {outputBuffer4.Discharging}");
             }
 
+            Console.WriteLine(@"Going to sleep in 3 secundos...");
+            Thread.Sleep(3000);
+            
+            //Sleep
+            SetSuspendState(false, false, false);
+            SetWaitForWakeUpTime();
+
+        }
+
+
+        static void SetWaitForWakeUpTime()
+        {
+            DateTime time = DateTime.Now.AddMinutes(1);
+            long duetime = time.ToFileTime();
+
+            using (SafeWaitHandle handle = CreateWaitableTimer(IntPtr.Zero, true, "MyWaitabletimer"))
+            {
+                if (SetWaitableTimer(handle, ref duetime, 0, IntPtr.Zero, IntPtr.Zero, true))
+                {
+                    using (EventWaitHandle wh = new EventWaitHandle(false, EventResetMode.AutoReset))
+                    {
+                        wh.SafeWaitHandle = handle;
+                        wh.WaitOne();
+                    }
+                }
+                else
+                {
+                    throw new Win32Exception(Marshal.GetLastWin32Error());
+                }
+            }
+
+            // You could make it a recursive call here, setting it to 1 hours time or similar
+            Console.WriteLine("Wake up call");
             Console.ReadLine();
         }
     }
