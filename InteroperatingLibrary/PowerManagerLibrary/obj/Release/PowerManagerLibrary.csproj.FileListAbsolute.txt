@@ -2,3 +2,4 @@ D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\PowerManagerLibrary
 D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\PowerManagerLibrary\bin\Release\PowerManagerLibrary.pdb
 D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\PowerManagerLibrary\obj\Release\PowerManagerLibrary.dll
 D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\PowerManagerLibrary\obj\Release\PowerManagerLibrary.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\PowerManagerLibrary\bin\Release\PowerManagerLibrary.tlb
