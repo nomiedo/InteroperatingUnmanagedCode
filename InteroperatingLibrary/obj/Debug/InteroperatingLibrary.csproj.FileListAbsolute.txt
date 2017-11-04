@@ -1,6 +1,10 @@
 D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\InteroperatingLibrary.exe.config
-d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\InteroperatingLibrary.exe
-d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\InteroperatingLibrary.pdb
-d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.exe
-d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.pdb
-d:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.csprojResolveAssemblyReference.cache
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\InteroperatingLibrary.exe
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\InteroperatingLibrary.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.Properties.Resources.resources
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.csproj.GenerateResource.Cache
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.exe
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\PowerManagerLibrary.dll
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Debug\PowerManagerLibrary.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Debug\InteroperatingLibrary.csprojResolveAssemblyReference.cache

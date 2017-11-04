@@ -1,0 +1,10 @@
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Release\InteroperatingLibrary.exe.config
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Release\InteroperatingLibrary.exe
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Release\InteroperatingLibrary.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Release\InteroperatingLibrary.Properties.Resources.resources
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Release\InteroperatingLibrary.csproj.GenerateResource.Cache
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Release\InteroperatingLibrary.exe
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Release\InteroperatingLibrary.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Release\PowerManagerLibrary.dll
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\bin\Release\PowerManagerLibrary.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\obj\Release\InteroperatingLibrary.csprojResolveAssemblyReference.cache

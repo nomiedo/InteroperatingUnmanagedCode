@@ -1,0 +1,4 @@
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\PowerManagerLibrary\bin\Release\PowerManagerLibrary.dll
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\PowerManagerLibrary\bin\Release\PowerManagerLibrary.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\PowerManagerLibrary\obj\Release\PowerManagerLibrary.dll
+D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\PowerManagerLibrary\obj\Release\PowerManagerLibrary.pdb

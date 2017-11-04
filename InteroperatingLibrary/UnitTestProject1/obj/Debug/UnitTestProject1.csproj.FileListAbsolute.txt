@@ -1,6 +1,0 @@
-D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\UnitTestProject1\bin\Debug\UnitTestProject1.dll
-D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
-D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
-D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\UnitTestProject1\obj\Debug\UnitTestProject1.dll
-D:\TESTPRO\InteroperatingUnmanagedCode\InteroperatingLibrary\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
