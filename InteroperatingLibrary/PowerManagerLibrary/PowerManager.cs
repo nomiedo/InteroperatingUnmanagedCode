@@ -16,6 +16,7 @@ namespace PowerManagerLibrary
         const int LastWakeTimeLevel = 14;
         const int SystemPowerInformationLevel = 12;
         const int SystemBatteryStateLevel = 5;
+        const int SystemReserveHiberFile = 10;
         const uint STATUS_SUCCESS = 0;
 
         #region Structures
@@ -108,12 +109,12 @@ namespace PowerManagerLibrary
             int nOutputBufferSize
         );
 
-        [DllImport("powrprof.dll")]
+        [DllImport("powrprof.dll", SetLastError = true)]
         static extern uint CallNtPowerInformation(
             int InformationLevel,
             IntPtr lpInputBuffer,
             int nInputBufferSize,
-            IntPtr lpOutputBuffer,
+            out IntPtr lpOutputBuffer,
             int nOutputBufferSize
         );
 
@@ -182,16 +183,25 @@ namespace PowerManagerLibrary
             return outputBuffer;
         }
 
+        [MarshalAs(UnmanagedType.Bool)] private bool hyber = true;
+
         public bool SystemReserveHiberFileReserve()
         {
-            bool outputBuffer;
+            IntPtr outboof;
+
+            IntPtr flag = Marshal.AllocCoTaskMem(Marshal.SizeOf(typeof(Int32)));
+            Marshal.WriteInt32(flag, 1);
+    
             uint retval = CallNtPowerInformation(
-                10,
-                IntPtr.Zero,
+                SystemReserveHiberFile,
+                flag,
                 0,
-                IntPtr.Zero,
-                0
+                out outboof,
+                Marshal.SizeOf(typeof(IntPtr))
             );
+
+            if (retval != STATUS_SUCCESS) { var error = Marshal.GetLastWin32Error(); Console.WriteLine(error); }
+
             return retval == STATUS_SUCCESS;
         }
 
