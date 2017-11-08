@@ -11,10 +11,14 @@ namespace InteroperatingLibrary
             IPowerManager powerManager = new PowerManager();
 
             var lastSleepTime = powerManager.GetPowerInfo_LastSleepTime();
-            Console.WriteLine($@"Last Sleep Time: {lastSleepTime}");
+            var dateS = new DateTime(1970, 1, 1).AddSeconds(double.Parse(lastSleepTime));
+            Console.WriteLine($@"Last Sleep Time: {dateS}");
 
             var lastWakeTime = powerManager.GetPowerInfo_LastWakeTime();
-            Console.WriteLine($@"Last Wake Time: {lastWakeTime}");
+            var dateW = new DateTime(1970, 1, 1).AddSeconds(double.Parse(lastWakeTime));
+            Console.WriteLine($@"Last Wake Time: {dateW}");
+
+            powerManager.SystemReserveHiberFileReserve();
 
             var systemPowerInformation = powerManager.GetPowerInfo_SystemPowerInformation();
             Console.WriteLine($@"SystemPowerInformation : CoolingMode: {systemPowerInformation.CoolingMode}");

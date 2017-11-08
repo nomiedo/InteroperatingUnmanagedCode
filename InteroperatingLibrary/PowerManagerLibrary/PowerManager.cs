@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics.Eventing.Reader;
 using System.Runtime.InteropServices;
 using System.Threading;
 using Microsoft.Win32.SafeHandles;
@@ -107,6 +108,15 @@ namespace PowerManagerLibrary
             int nOutputBufferSize
         );
 
+        [DllImport("powrprof.dll")]
+        static extern uint CallNtPowerInformation(
+            int InformationLevel,
+            IntPtr lpInputBuffer,
+            int nInputBufferSize,
+            IntPtr lpOutputBuffer,
+            int nOutputBufferSize
+        );
+
         [DllImport("PowrProf.dll", CharSet = CharSet.Auto, ExactSpelling = true)]
         public static extern bool SetSuspendState(bool hiberate, bool forceCritical, bool disableWakeEvent);
 
@@ -170,6 +180,19 @@ namespace PowerManagerLibrary
                 Marshal.SizeOf(typeof(SystemBatteryStateBuffer))
             );
             return outputBuffer;
+        }
+
+        public bool SystemReserveHiberFileReserve()
+        {
+            bool outputBuffer;
+            uint retval = CallNtPowerInformation(
+                10,
+                IntPtr.Zero,
+                0,
+                IntPtr.Zero,
+                0
+            );
+            return retval == STATUS_SUCCESS;
         }
 
         public void Sleep()

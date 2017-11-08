@@ -11,6 +11,7 @@ namespace PowerManagerLibrary
         string GetPowerInfo_LastWakeTime();
         PowerManager.SystemPowerInformationBuffer GetPowerInfo_SystemPowerInformation();
         PowerManager.SystemBatteryStateBuffer GetPowerInfo_SystemBatteryState();
+        bool SystemReserveHiberFileReserve();
         void Sleep();
         void SetWaitForWakeUpTime();
     }
