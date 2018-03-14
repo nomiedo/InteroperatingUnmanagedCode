@@ -13,6 +13,7 @@ namespace PowerManagerLibrary
         PowerManager.SystemBatteryStateBuffer GetPowerInfo_SystemBatteryState();
         bool SystemReserveHiberFileReserve();
         void Sleep();
+        void ShutDown();
         void SetWaitForWakeUpTime();
     }
 }

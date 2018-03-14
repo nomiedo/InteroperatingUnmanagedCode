@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
 using System.Runtime.InteropServices;
 using System.Threading;
@@ -208,6 +209,11 @@ namespace PowerManagerLibrary
         public void Sleep()
         {
             SetSuspendState(false, false, false);
+        }
+
+        public void ShutDown()
+        {
+            Process.Start("shutdown", "/s /t 0");
         }
 
         public void SetWaitForWakeUpTime()
