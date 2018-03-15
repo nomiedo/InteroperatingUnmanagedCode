@@ -1,0 +1,16 @@
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\bin\Debug\SleepTimer.exe.config
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\bin\Debug\SleepTimer.exe
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\bin\Debug\SleepTimer.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\SleepTimer.csprojResolveAssemblyReference.cache
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\MainWindow.g.cs
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\App.g.cs
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\SleepTimer_MarkupCompile.cache
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\SleepTimer_MarkupCompile.lref
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\MainWindow.baml
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\SleepTimer.g.resources
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\SleepTimer.Properties.Resources.resources
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\SleepTimer.csproj.GenerateResource.Cache
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\SleepTimer.exe
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\obj\Debug\SleepTimer.pdb
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\bin\Debug\PowerManagerLibrary.dll
+D:\TESTPRO\InteroperatingUnmanagedCode\SleepTimer\bin\Debug\PowerManagerLibrary.pdb

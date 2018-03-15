@@ -1,0 +1,43 @@
+﻿<Window x:Class="SleepTimer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SleepTimer"
+        mc:Ignorable="d"
+        Title="Timer" Height="205.274" Width="525.609" ResizeMode ="NoResize">
+    <Grid Margin="0,0,-48,1">
+        <ComboBox x:Name="Type" FontSize="24" Margin="10,10,383,115">
+            <ComboBoxItem IsSelected="True" Content="Shut Down"/>
+            <ComboBoxItem Content="Sleep"/>
+        </ComboBox>
+        <ComboBox x:Name="Hours" Margin="224,10,272,115" FontSize="24">
+            <ComboBoxItem IsSelected="True" Content="00"/>
+            <ComboBoxItem Content="01"/>
+            <ComboBoxItem Content="02"/>
+            <ComboBoxItem Content="03"/>
+            <ComboBoxItem Content="04"/>
+            <ComboBoxItem Content="05"/>
+            <ComboBoxItem Content="06"/>
+        </ComboBox>
+        <ComboBox x:Name="Minutes" Margin="311,10,183,115" FontSize="24">
+            <ComboBoxItem IsSelected="True" Content="00"/>
+            <ComboBoxItem Content="01"/>
+            <ComboBoxItem Content="05"/>
+            <ComboBoxItem Content="10"/>
+            <ComboBoxItem Content="15"/>
+            <ComboBoxItem Content="20"/>
+            <ComboBoxItem Content="25"/>
+            <ComboBoxItem Content="30"/>
+            <ComboBoxItem Content="35"/>
+            <ComboBoxItem Content="40"/>
+            <ComboBoxItem Content="45"/>
+            <ComboBoxItem Content="50"/>
+            <ComboBoxItem Content="55"/>
+        </ComboBox>
+        <Label x:Name="in" Content="in&#xD;&#xA;" HorizontalAlignment="Left" Margin="190,10,0,0" VerticalAlignment="Top" FontSize="24" Height="50"/>
+        <Button x:Name="btnStart" Content="Start" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="147" Height="66" Click="btnStart_Click" FontSize="24"/>
+        <Label x:Name="_in" Content=":&#xA;" HorizontalAlignment="Left" Margin="296,10,0,0" VerticalAlignment="Top" FontSize="24" Height="50"/>
+        <Label x:Name="label" Content="Please choose time." HorizontalAlignment="Left" Margin="181,83,0,0" VerticalAlignment="Top" FontSize="32" Height="66" Width="316"/>
+    </Grid>
+</Window>
